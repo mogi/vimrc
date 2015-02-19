@@ -32,6 +32,8 @@ let g:netrw_liststyle=3
 command! Ev edit ~/dotfiles/vimfiles/userautoload/
 command! Rv source $MYVIMRC
 
+" 貼付け時に自動でpasteモードにする
+" http://qiita.com/ringo/items/bb9cf61a3ccfe6183c7b
 if &term =~ "xterm"
     let &t_ti .= "\e[?2004h"
     let &t_te .= "\e[?2004l"
